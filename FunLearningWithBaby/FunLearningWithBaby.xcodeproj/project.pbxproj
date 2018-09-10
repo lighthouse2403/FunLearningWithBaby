@@ -11,7 +11,6 @@
 		9EE3538418265F3687C57C70 /* Pods_FunLearningWithBabyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1CF039176D983DE156A1A29 /* Pods_FunLearningWithBabyTests.framework */; };
 		FBD0892D214648AC002506BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD0892C214648AC002506BC /* AppDelegate.swift */; };
 		FBD08932214648AC002506BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBD08930214648AC002506BC /* Main.storyboard */; };
-		FBD08934214648AE002506BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBD08933214648AE002506BC /* Assets.xcassets */; };
 		FBD08937214648AE002506BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBD08935214648AE002506BC /* LaunchScreen.storyboard */; };
 		FBD08942214648AE002506BC /* FunLearningWithBabyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD08941214648AE002506BC /* FunLearningWithBabyTests.swift */; };
 		FBD0894D214648AE002506BC /* FunLearningWithBabyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD0894C214648AE002506BC /* FunLearningWithBabyUITests.swift */; };
@@ -22,6 +21,12 @@
 		FBD0896521464D57002506BC /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD0895F21464D57002506BC /* UILabelExtension.swift */; };
 		FBD0896621464D57002506BC /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD0896021464D57002506BC /* UIViewExtension.swift */; };
 		FBD0896D21466567002506BC /* SpeechViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD0896C21466567002506BC /* SpeechViewController.swift */; };
+		FBD0897121467569002506BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBD0896F21467569002506BC /* Assets.xcassets */; };
+		FBD0897221467569002506BC /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FBD0897021467569002506BC /* Info.plist */; };
+		FBD089772146758B002506BC /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD089742146758B002506BC /* Common.swift */; };
+		FBD089782146758B002506BC /* Define.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD089752146758B002506BC /* Define.swift */; };
+		FBD089792146758B002506BC /* FirebaseAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD089762146758B002506BC /* FirebaseAction.swift */; };
+		FBD0897B214675E2002506BC /* OriginalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD0897A214675E2002506BC /* OriginalViewController.swift */; };
 		FE019FA3E83FEC2536DD8289 /* Pods_FunLearningWithBabyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5E5E0C9FD0C2582B2EEB00F /* Pods_FunLearningWithBabyUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -55,9 +60,7 @@
 		FBD08929214648AC002506BC /* FunLearningWithBaby.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FunLearningWithBaby.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBD0892C214648AC002506BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FBD08931214648AC002506BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		FBD08933214648AE002506BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FBD08936214648AE002506BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		FBD08938214648AE002506BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FBD0893D214648AE002506BC /* FunLearningWithBabyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FunLearningWithBabyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBD08941214648AE002506BC /* FunLearningWithBabyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunLearningWithBabyTests.swift; sourceTree = "<group>"; };
 		FBD08943214648AE002506BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -71,6 +74,12 @@
 		FBD0895F21464D57002506BC /* UILabelExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelExtension.swift; sourceTree = "<group>"; };
 		FBD0896021464D57002506BC /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		FBD0896C21466567002506BC /* SpeechViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechViewController.swift; sourceTree = "<group>"; };
+		FBD0896F21467569002506BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FBD0897021467569002506BC /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBD089742146758B002506BC /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		FBD089752146758B002506BC /* Define.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Define.swift; sourceTree = "<group>"; };
+		FBD089762146758B002506BC /* FirebaseAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseAction.swift; sourceTree = "<group>"; };
+		FBD0897A214675E2002506BC /* OriginalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OriginalViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,7 +159,8 @@
 			isa = PBXGroup;
 			children = (
 				FBD0892C214648AC002506BC /* AppDelegate.swift */,
-				FBD0896821464D8B002506BC /* Configuration */,
+				FBD0896E21467569002506BC /* Configuaration */,
+				FBD089732146758B002506BC /* Common */,
 				FBD0895A21464D57002506BC /* Extension */,
 				FBD0896721464D66002506BC /* Storyboard */,
 				FBD0896B2146650C002506BC /* ViewController */,
@@ -198,22 +208,32 @@
 			path = Storyboard;
 			sourceTree = "<group>";
 		};
-		FBD0896821464D8B002506BC /* Configuration */ = {
-			isa = PBXGroup;
-			children = (
-				FBD08933214648AE002506BC /* Assets.xcassets */,
-				FBD08938214648AE002506BC /* Info.plist */,
-			);
-			name = Configuration;
-			path = "Cònig";
-			sourceTree = "<group>";
-		};
 		FBD0896B2146650C002506BC /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				FBD0897A214675E2002506BC /* OriginalViewController.swift */,
 				FBD0896C21466567002506BC /* SpeechViewController.swift */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		FBD0896E21467569002506BC /* Configuaration */ = {
+			isa = PBXGroup;
+			children = (
+				FBD0896F21467569002506BC /* Assets.xcassets */,
+				FBD0897021467569002506BC /* Info.plist */,
+			);
+			path = Configuaration;
+			sourceTree = "<group>";
+		};
+		FBD089732146758B002506BC /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				FBD089742146758B002506BC /* Common.swift */,
+				FBD089752146758B002506BC /* Define.swift */,
+				FBD089762146758B002506BC /* FirebaseAction.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -324,8 +344,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBD0897221467569002506BC /* Info.plist in Resources */,
 				FBD08937214648AE002506BC /* LaunchScreen.storyboard in Resources */,
-				FBD08934214648AE002506BC /* Assets.xcassets in Resources */,
+				FBD0897121467569002506BC /* Assets.xcassets in Resources */,
 				FBD08932214648AC002506BC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -436,9 +457,13 @@
 				FBD0896321464D57002506BC /* StringExtension.swift in Sources */,
 				FBD0896421464D57002506BC /* UIDeviceExtension.swift in Sources */,
 				FBD0896521464D57002506BC /* UILabelExtension.swift in Sources */,
+				FBD089772146758B002506BC /* Common.swift in Sources */,
 				FBD0896D21466567002506BC /* SpeechViewController.swift in Sources */,
 				FBD0892D214648AC002506BC /* AppDelegate.swift in Sources */,
+				FBD0897B214675E2002506BC /* OriginalViewController.swift in Sources */,
+				FBD089792146758B002506BC /* FirebaseAction.swift in Sources */,
 				FBD0896621464D57002506BC /* UIViewExtension.swift in Sources */,
+				FBD089782146758B002506BC /* Define.swift in Sources */,
 				FBD0896221464D57002506BC /* NSObjectExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

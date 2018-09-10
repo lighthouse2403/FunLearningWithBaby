@@ -27,20 +27,8 @@ class SpeechViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-    // MARK: Speech Action
-    func startSpeech() {
-        if isRecording == true {
-            audioEngine.stop()
-            recognitionTask?.cancel()
-            isRecording = false
-        } else {
-            self.recordAndRecognizeSpeech()
-            isRecording = true
-        }
-    }
     
-    //MARK: - Check Authorization Status
+    // MARK: - Check Authorization Status
     func requestSpeechAuthorization(authorization: @escaping (SFSpeechRecognizerAuthorizationStatus) -> ()) {
         SFSpeechRecognizer.requestAuthorization { authStatus in
             authorization(authStatus)
