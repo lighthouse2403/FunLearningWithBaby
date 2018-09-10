@@ -25,8 +25,8 @@
 		FBD0897221467569002506BC /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FBD0897021467569002506BC /* Info.plist */; };
 		FBD089772146758B002506BC /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD089742146758B002506BC /* Common.swift */; };
 		FBD089782146758B002506BC /* Define.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD089752146758B002506BC /* Define.swift */; };
-		FBD089792146758B002506BC /* FirebaseAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD089762146758B002506BC /* FirebaseAction.swift */; };
 		FBD0897B214675E2002506BC /* OriginalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD0897A214675E2002506BC /* OriginalViewController.swift */; };
+		FBD0897D21467D37002506BC /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FBD0897C21467D37002506BC /* Default-568h@2x.png */; };
 		FE019FA3E83FEC2536DD8289 /* Pods_FunLearningWithBabyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5E5E0C9FD0C2582B2EEB00F /* Pods_FunLearningWithBabyUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -78,8 +78,8 @@
 		FBD0897021467569002506BC /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FBD089742146758B002506BC /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		FBD089752146758B002506BC /* Define.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Define.swift; sourceTree = "<group>"; };
-		FBD089762146758B002506BC /* FirebaseAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseAction.swift; sourceTree = "<group>"; };
 		FBD0897A214675E2002506BC /* OriginalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OriginalViewController.swift; sourceTree = "<group>"; };
+		FBD0897C21467D37002506BC /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +136,7 @@
 		FBD08920214648AC002506BC = {
 			isa = PBXGroup;
 			children = (
+				FBD0897C21467D37002506BC /* Default-568h@2x.png */,
 				FBD0892B214648AC002506BC /* FunLearningWithBaby */,
 				FBD08940214648AE002506BC /* FunLearningWithBabyTests */,
 				FBD0894B214648AE002506BC /* FunLearningWithBabyUITests */,
@@ -231,7 +232,6 @@
 			children = (
 				FBD089742146758B002506BC /* Common.swift */,
 				FBD089752146758B002506BC /* Define.swift */,
-				FBD089762146758B002506BC /* FirebaseAction.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -347,6 +347,7 @@
 				FBD0897221467569002506BC /* Info.plist in Resources */,
 				FBD08937214648AE002506BC /* LaunchScreen.storyboard in Resources */,
 				FBD0897121467569002506BC /* Assets.xcassets in Resources */,
+				FBD0897D21467D37002506BC /* Default-568h@2x.png in Resources */,
 				FBD08932214648AC002506BC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -461,7 +462,6 @@
 				FBD0896D21466567002506BC /* SpeechViewController.swift in Sources */,
 				FBD0892D214648AC002506BC /* AppDelegate.swift in Sources */,
 				FBD0897B214675E2002506BC /* OriginalViewController.swift in Sources */,
-				FBD089792146758B002506BC /* FirebaseAction.swift in Sources */,
 				FBD0896621464D57002506BC /* UIViewExtension.swift in Sources */,
 				FBD089782146758B002506BC /* Define.swift in Sources */,
 				FBD0896221464D57002506BC /* NSObjectExtension.swift in Sources */,

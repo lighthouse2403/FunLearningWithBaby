@@ -164,7 +164,7 @@ class Common: NSObject {
             return false
         }
         
-        UIApplication.shared.openURL(url)
+        UIApplication.shared.open(url, options: [:], completionHandler: nil)
         
         return true
     }
@@ -195,7 +195,7 @@ class Common: NSObject {
         if AVCaptureDevice.authorizationStatus(for: .video) == .denied {
             let alertController = UIAlertController(title: "Ứng dụng này muốn truy cập máy ảnh", message: "Vui lòng cho phép để truy cập máy ảnh", preferredStyle: .alert)
             alertController.addAction(UIAlertAction(title: "Mở cài đặt", style: .cancel) { alertController in
-                UIApplication.shared.openURL(URL(string: UIApplicationOpenSettingsURLString)!)
+                UIApplication.shared.open(URL(string: UIApplicationOpenSettingsURLString)!, options: [:], completionHandler: nil)
             })
             alertController.addAction(UIAlertAction(title: "Cancel", style: .default))
             controller.present(alertController, animated: true, completion: nil)
@@ -214,7 +214,7 @@ class Common: NSObject {
         if PHPhotoLibrary.authorizationStatus() == PHAuthorizationStatus.denied {
             let alertController = UIAlertController(title: "Ứng dụng này muốn truy cập thư viện ảnh", message: "Vui lòng cho phép để truy cập thư viện ảnh", preferredStyle: .alert)
             alertController.addAction(UIAlertAction(title: "Mở cài đặt", style: .cancel) { alertController in
-                UIApplication.shared.openURL(URL(string: UIApplicationOpenSettingsURLString)!)
+                UIApplication.shared.open(URL(string: UIApplicationOpenSettingsURLString)!, options: [:], completionHandler: nil)
             })
             alertController.addAction(UIAlertAction(title: "Cancel", style: .default))
             controller.present(alertController, animated: true, completion: nil)

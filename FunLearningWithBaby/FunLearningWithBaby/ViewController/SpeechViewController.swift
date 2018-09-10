@@ -66,7 +66,6 @@ class SpeechViewController: UIViewController {
         recognitionTask = speechRecognizer?.recognitionTask(with: request, resultHandler: { result, error in
             if let result = result {
                 // Accept
-                let bestString = result.bestTranscription.formattedString
                 completionHandler(nil,result)
 
             } else if let error = error {
