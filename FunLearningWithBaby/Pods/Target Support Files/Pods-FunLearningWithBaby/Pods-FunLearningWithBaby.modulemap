@@ -1,0 +1,6 @@
+framework module Pods_FunLearningWithBaby {
+  umbrella header "Pods-FunLearningWithBaby-umbrella.h"
+
+  export *
+  module * { export * }
+}

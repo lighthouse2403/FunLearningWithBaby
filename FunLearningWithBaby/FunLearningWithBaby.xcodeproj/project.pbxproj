@@ -7,13 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		10C0C1BA8D72E4705978601B /* Pods_FunLearningWithBaby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F0F37DE4136078CFA1C9E14 /* Pods_FunLearningWithBaby.framework */; };
+		9EE3538418265F3687C57C70 /* Pods_FunLearningWithBabyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1CF039176D983DE156A1A29 /* Pods_FunLearningWithBabyTests.framework */; };
 		FBD0892D214648AC002506BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD0892C214648AC002506BC /* AppDelegate.swift */; };
-		FBD0892F214648AC002506BC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD0892E214648AC002506BC /* ViewController.swift */; };
 		FBD08932214648AC002506BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBD08930214648AC002506BC /* Main.storyboard */; };
 		FBD08934214648AE002506BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBD08933214648AE002506BC /* Assets.xcassets */; };
 		FBD08937214648AE002506BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBD08935214648AE002506BC /* LaunchScreen.storyboard */; };
 		FBD08942214648AE002506BC /* FunLearningWithBabyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD08941214648AE002506BC /* FunLearningWithBabyTests.swift */; };
 		FBD0894D214648AE002506BC /* FunLearningWithBabyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD0894C214648AE002506BC /* FunLearningWithBabyUITests.swift */; };
+		FBD0896121464D57002506BC /* Mdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD0895B21464D57002506BC /* Mdate.swift */; };
+		FBD0896221464D57002506BC /* NSObjectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD0895C21464D57002506BC /* NSObjectExtension.swift */; };
+		FBD0896321464D57002506BC /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD0895D21464D57002506BC /* StringExtension.swift */; };
+		FBD0896421464D57002506BC /* UIDeviceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD0895E21464D57002506BC /* UIDeviceExtension.swift */; };
+		FBD0896521464D57002506BC /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD0895F21464D57002506BC /* UILabelExtension.swift */; };
+		FBD0896621464D57002506BC /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD0896021464D57002506BC /* UIViewExtension.swift */; };
+		FBD0896D21466567002506BC /* SpeechViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD0896C21466567002506BC /* SpeechViewController.swift */; };
+		FE019FA3E83FEC2536DD8289 /* Pods_FunLearningWithBabyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5E5E0C9FD0C2582B2EEB00F /* Pods_FunLearningWithBabyUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +43,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		16802CCE0C9B901FE4E18694 /* Pods-FunLearningWithBabyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FunLearningWithBabyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FunLearningWithBabyTests/Pods-FunLearningWithBabyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		27E4B213868B3D53A1FC5C3F /* Pods-FunLearningWithBabyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FunLearningWithBabyUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FunLearningWithBabyUITests/Pods-FunLearningWithBabyUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2F0F37DE4136078CFA1C9E14 /* Pods_FunLearningWithBaby.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FunLearningWithBaby.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5287C6CD9725DD94F65FBF6A /* Pods-FunLearningWithBabyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FunLearningWithBabyUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FunLearningWithBabyUITests/Pods-FunLearningWithBabyUITests.release.xcconfig"; sourceTree = "<group>"; };
+		630BFEDFAB248090A57E2BE1 /* Pods-FunLearningWithBaby.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FunLearningWithBaby.release.xcconfig"; path = "Pods/Target Support Files/Pods-FunLearningWithBaby/Pods-FunLearningWithBaby.release.xcconfig"; sourceTree = "<group>"; };
+		A1CF039176D983DE156A1A29 /* Pods_FunLearningWithBabyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FunLearningWithBabyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5E5E0C9FD0C2582B2EEB00F /* Pods_FunLearningWithBabyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FunLearningWithBabyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAC4EA5C8A1D64F29E04C548 /* Pods-FunLearningWithBabyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FunLearningWithBabyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FunLearningWithBabyTests/Pods-FunLearningWithBabyTests.release.xcconfig"; sourceTree = "<group>"; };
+		D70C1565440640DD3EDC1D85 /* Pods-FunLearningWithBaby.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FunLearningWithBaby.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FunLearningWithBaby/Pods-FunLearningWithBaby.debug.xcconfig"; sourceTree = "<group>"; };
 		FBD08929214648AC002506BC /* FunLearningWithBaby.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FunLearningWithBaby.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBD0892C214648AC002506BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FBD0892E214648AC002506BC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FBD08931214648AC002506BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FBD08933214648AE002506BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FBD08936214648AE002506BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +64,13 @@
 		FBD08948214648AE002506BC /* FunLearningWithBabyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FunLearningWithBabyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBD0894C214648AE002506BC /* FunLearningWithBabyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunLearningWithBabyUITests.swift; sourceTree = "<group>"; };
 		FBD0894E214648AE002506BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBD0895B21464D57002506BC /* Mdate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mdate.swift; sourceTree = "<group>"; };
+		FBD0895C21464D57002506BC /* NSObjectExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSObjectExtension.swift; sourceTree = "<group>"; };
+		FBD0895D21464D57002506BC /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		FBD0895E21464D57002506BC /* UIDeviceExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIDeviceExtension.swift; sourceTree = "<group>"; };
+		FBD0895F21464D57002506BC /* UILabelExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelExtension.swift; sourceTree = "<group>"; };
+		FBD0896021464D57002506BC /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		FBD0896C21466567002506BC /* SpeechViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10C0C1BA8D72E4705978601B /* Pods_FunLearningWithBaby.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9EE3538418265F3687C57C70 /* Pods_FunLearningWithBabyTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +94,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE019FA3E83FEC2536DD8289 /* Pods_FunLearningWithBabyUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		473B375C270060E83C78932A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D70C1565440640DD3EDC1D85 /* Pods-FunLearningWithBaby.debug.xcconfig */,
+				630BFEDFAB248090A57E2BE1 /* Pods-FunLearningWithBaby.release.xcconfig */,
+				16802CCE0C9B901FE4E18694 /* Pods-FunLearningWithBabyTests.debug.xcconfig */,
+				BAC4EA5C8A1D64F29E04C548 /* Pods-FunLearningWithBabyTests.release.xcconfig */,
+				27E4B213868B3D53A1FC5C3F /* Pods-FunLearningWithBabyUITests.debug.xcconfig */,
+				5287C6CD9725DD94F65FBF6A /* Pods-FunLearningWithBabyUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9C353511607A395948F04EED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2F0F37DE4136078CFA1C9E14 /* Pods_FunLearningWithBaby.framework */,
+				A1CF039176D983DE156A1A29 /* Pods_FunLearningWithBabyTests.framework */,
+				B5E5E0C9FD0C2582B2EEB00F /* Pods_FunLearningWithBabyUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FBD08920214648AC002506BC = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +131,8 @@
 				FBD08940214648AE002506BC /* FunLearningWithBabyTests */,
 				FBD0894B214648AE002506BC /* FunLearningWithBabyUITests */,
 				FBD0892A214648AC002506BC /* Products */,
+				473B375C270060E83C78932A /* Pods */,
+				9C353511607A395948F04EED /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,11 +150,10 @@
 			isa = PBXGroup;
 			children = (
 				FBD0892C214648AC002506BC /* AppDelegate.swift */,
-				FBD0892E214648AC002506BC /* ViewController.swift */,
-				FBD08930214648AC002506BC /* Main.storyboard */,
-				FBD08933214648AE002506BC /* Assets.xcassets */,
-				FBD08935214648AE002506BC /* LaunchScreen.storyboard */,
-				FBD08938214648AE002506BC /* Info.plist */,
+				FBD0896821464D8B002506BC /* Configuration */,
+				FBD0895A21464D57002506BC /* Extension */,
+				FBD0896721464D66002506BC /* Storyboard */,
+				FBD0896B2146650C002506BC /* ViewController */,
 			);
 			path = FunLearningWithBaby;
 			sourceTree = "<group>";
@@ -125,6 +176,46 @@
 			path = FunLearningWithBabyUITests;
 			sourceTree = "<group>";
 		};
+		FBD0895A21464D57002506BC /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				FBD0895B21464D57002506BC /* Mdate.swift */,
+				FBD0895C21464D57002506BC /* NSObjectExtension.swift */,
+				FBD0895D21464D57002506BC /* StringExtension.swift */,
+				FBD0895E21464D57002506BC /* UIDeviceExtension.swift */,
+				FBD0895F21464D57002506BC /* UILabelExtension.swift */,
+				FBD0896021464D57002506BC /* UIViewExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		FBD0896721464D66002506BC /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				FBD08935214648AE002506BC /* LaunchScreen.storyboard */,
+				FBD08930214648AC002506BC /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		FBD0896821464D8B002506BC /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				FBD08933214648AE002506BC /* Assets.xcassets */,
+				FBD08938214648AE002506BC /* Info.plist */,
+			);
+			name = Configuration;
+			path = "Cònig";
+			sourceTree = "<group>";
+		};
+		FBD0896B2146650C002506BC /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FBD0896C21466567002506BC /* SpeechViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +223,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FBD08951214648AE002506BC /* Build configuration list for PBXNativeTarget "FunLearningWithBaby" */;
 			buildPhases = (
+				E36FB8861A48CA6BF1A1997A /* [CP] Check Pods Manifest.lock */,
 				FBD08925214648AC002506BC /* Sources */,
 				FBD08926214648AC002506BC /* Frameworks */,
 				FBD08927214648AC002506BC /* Resources */,
+				BB34E5779B9976331A2522CF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +242,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FBD08954214648AE002506BC /* Build configuration list for PBXNativeTarget "FunLearningWithBabyTests" */;
 			buildPhases = (
+				41730BC521726ADFD2D0C385 /* [CP] Check Pods Manifest.lock */,
 				FBD08939214648AE002506BC /* Sources */,
 				FBD0893A214648AE002506BC /* Frameworks */,
 				FBD0893B214648AE002506BC /* Resources */,
@@ -167,6 +261,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FBD08957214648AE002506BC /* Build configuration list for PBXNativeTarget "FunLearningWithBabyUITests" */;
 			buildPhases = (
+				5D038CAD66F92D055C70F636 /* [CP] Check Pods Manifest.lock */,
 				FBD08944214648AE002506BC /* Sources */,
 				FBD08945214648AE002506BC /* Frameworks */,
 				FBD08946214648AE002506BC /* Resources */,
@@ -251,13 +346,100 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		41730BC521726ADFD2D0C385 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FunLearningWithBabyTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5D038CAD66F92D055C70F636 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FunLearningWithBabyUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB34E5779B9976331A2522CF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FunLearningWithBaby/Pods-FunLearningWithBaby-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/MagicalRecord/MagicalRecord.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MagicalRecord.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FunLearningWithBaby/Pods-FunLearningWithBaby-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E36FB8861A48CA6BF1A1997A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FunLearningWithBaby-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FBD08925214648AC002506BC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FBD0892F214648AC002506BC /* ViewController.swift in Sources */,
+				FBD0896121464D57002506BC /* Mdate.swift in Sources */,
+				FBD0896321464D57002506BC /* StringExtension.swift in Sources */,
+				FBD0896421464D57002506BC /* UIDeviceExtension.swift in Sources */,
+				FBD0896521464D57002506BC /* UILabelExtension.swift in Sources */,
+				FBD0896D21466567002506BC /* SpeechViewController.swift in Sources */,
 				FBD0892D214648AC002506BC /* AppDelegate.swift in Sources */,
+				FBD0896621464D57002506BC /* UIViewExtension.swift in Sources */,
+				FBD0896221464D57002506BC /* NSObjectExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,10 +610,13 @@
 		};
 		FBD08952214648AE002506BC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D70C1565440640DD3EDC1D85 /* Pods-FunLearningWithBaby.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = FunLearningWithBaby/Info.plist;
+				DEVELOPMENT_TEAM = RT689AHQ26;
+				INFOPLIST_FILE = "$(SRCROOT)/FunLearningWithBaby/Cònig/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -445,10 +630,13 @@
 		};
 		FBD08953214648AE002506BC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 630BFEDFAB248090A57E2BE1 /* Pods-FunLearningWithBaby.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = FunLearningWithBaby/Info.plist;
+				DEVELOPMENT_TEAM = RT689AHQ26;
+				INFOPLIST_FILE = "$(SRCROOT)/FunLearningWithBaby/Cònig/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -462,6 +650,7 @@
 		};
 		FBD08955214648AE002506BC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16802CCE0C9B901FE4E18694 /* Pods-FunLearningWithBabyTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -482,6 +671,7 @@
 		};
 		FBD08956214648AE002506BC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BAC4EA5C8A1D64F29E04C548 /* Pods-FunLearningWithBabyTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -502,6 +692,7 @@
 		};
 		FBD08958214648AE002506BC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27E4B213868B3D53A1FC5C3F /* Pods-FunLearningWithBabyUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -521,6 +712,7 @@
 		};
 		FBD08959214648AE002506BC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5287C6CD9725DD94F65FBF6A /* Pods-FunLearningWithBabyUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
