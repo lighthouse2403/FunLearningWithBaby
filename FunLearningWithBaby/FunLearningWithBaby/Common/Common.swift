@@ -8,6 +8,7 @@
 
 import UIKit
 import Photos
+import StoreKit
 
 class Common: NSObject {
 
@@ -136,9 +137,21 @@ class Common: NSObject {
         return "itms-apps://itunes.apple.com/app/\(storeId)"
     }
     
-    // Get app rate link
+    // Review
     static func getAppRateLink(appId: String) -> String {
         return Common.getAppStoreLink(appId).appending("?action=write-review")
+    }
+    
+    static func showReviewAlert() {
+        // Request Review pop up
+        if #available(iOS 10.3, *) {
+            let isDisplayedAppReview = UserDefaults.standard.bool(forKey: "isDisplayedAppReview")
+            if !isDisplayedAppReview {
+                SKStoreReviewController.requestReview()
+                UserDefaults.standard.set(true, forKey: "isDisplayedAppReview")
+                UserDefaults.standard.synchronize()
+            }
+        }
     }
     
     /* Open external link from app */
