@@ -28,6 +28,18 @@ class SpeechViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    // MARK: Speech Action
+    func startSpeech() {
+        if isRecording == true {
+            audioEngine.stop()
+            recognitionTask?.cancel()
+            isRecording = false
+        } else {
+            self.recordAndRecognizeSpeech()
+            isRecording = true
+        }
+    }
+    
     //MARK: - Check Authorization Status
     func requestSpeechAuthorization(authorization: @escaping (SFSpeechRecognizerAuthorizationStatus) -> ()) {
         SFSpeechRecognizer.requestAuthorization { authStatus in
@@ -36,7 +48,7 @@ class SpeechViewController: UIViewController {
     }
 
     // Request speech
-    func recordAndRecognizeSpeech() {
+    func recordAndRecognizeSpeech(completionHandler: @escaping (Error?, SFSpeechRecognitionResult?) -> ()) {
         let node = audioEngine.inputNode
         let recordingFormat = node.outputFormat(forBus: 0)
         node.installTap(onBus: 0, bufferSize: 1024, format: recordingFormat) { buffer, _ in
@@ -47,26 +59,32 @@ class SpeechViewController: UIViewController {
             try audioEngine.start()
         } catch {
             // "There has been an audio engine error.")
+            completionHandler(error,nil)
             return print(error)
         }
         guard let myRecognizer = SFSpeechRecognizer() else {
+            completionHandler(nil,nil)
+
             // "Speech recognition is not supported for your current locale.")
             return
         }
         if !myRecognizer.isAvailable {
             // "Speech recognition is not currently available. Check back at a later time.")
             // Recognizer is not available right now
+            completionHandler(nil,nil)
+
             return
         }
         recognitionTask = speechRecognizer?.recognitionTask(with: request, resultHandler: { result, error in
             if let result = result {
                 // Accept
                 let bestString = result.bestTranscription.formattedString
-                
+                completionHandler(nil,result)
+
             } else if let error = error {
                 // Error
                 // "There has been a speech recognition error.")
-                print(error)
+                completionHandler(error,nil)
             }
         })
     }
