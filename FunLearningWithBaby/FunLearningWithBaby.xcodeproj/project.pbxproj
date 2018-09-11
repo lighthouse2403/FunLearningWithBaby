@@ -9,6 +9,14 @@
 /* Begin PBXBuildFile section */
 		10C0C1BA8D72E4705978601B /* Pods_FunLearningWithBaby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F0F37DE4136078CFA1C9E14 /* Pods_FunLearningWithBaby.framework */; };
 		9EE3538418265F3687C57C70 /* Pods_FunLearningWithBabyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1CF039176D983DE156A1A29 /* Pods_FunLearningWithBabyTests.framework */; };
+		FB90297B21475C14003D2590 /* InputSpeechViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB90297A21475C14003D2590 /* InputSpeechViewController.swift */; };
+		FB90297E21475EE5003D2590 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB90297D21475EE5003D2590 /* MainTabBarViewController.swift */; };
+		FB90298021475F29003D2590 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB90297F21475F29003D2590 /* HomeViewController.swift */; };
+		FB902988214766C8003D2590 /* CPImageSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB902983214766C8003D2590 /* CPImageSlider.swift */; };
+		FB902989214766C8003D2590 /* CPImageSlider.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB902984214766C8003D2590 /* CPImageSlider.xib */; };
+		FB90298A214766C8003D2590 /* cp_next_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = FB902986214766C8003D2590 /* cp_next_arrow.png */; };
+		FB90298B214766C8003D2590 /* cp_prev_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = FB902987214766C8003D2590 /* cp_prev_arrow.png */; };
+		FB90298E21476C86003D2590 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB90298D21476C86003D2590 /* BaseModel.swift */; };
 		FBD0892D214648AC002506BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD0892C214648AC002506BC /* AppDelegate.swift */; };
 		FBD08932214648AC002506BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBD08930214648AC002506BC /* Main.storyboard */; };
 		FBD08937214648AE002506BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBD08935214648AE002506BC /* LaunchScreen.storyboard */; };
@@ -26,7 +34,6 @@
 		FBD089772146758B002506BC /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD089742146758B002506BC /* Common.swift */; };
 		FBD089782146758B002506BC /* Define.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD089752146758B002506BC /* Define.swift */; };
 		FBD0897B214675E2002506BC /* OriginalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD0897A214675E2002506BC /* OriginalViewController.swift */; };
-		FBD0897D21467D37002506BC /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FBD0897C21467D37002506BC /* Default-568h@2x.png */; };
 		FE019FA3E83FEC2536DD8289 /* Pods_FunLearningWithBabyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5E5E0C9FD0C2582B2EEB00F /* Pods_FunLearningWithBabyUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +64,14 @@
 		B5E5E0C9FD0C2582B2EEB00F /* Pods_FunLearningWithBabyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FunLearningWithBabyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAC4EA5C8A1D64F29E04C548 /* Pods-FunLearningWithBabyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FunLearningWithBabyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FunLearningWithBabyTests/Pods-FunLearningWithBabyTests.release.xcconfig"; sourceTree = "<group>"; };
 		D70C1565440640DD3EDC1D85 /* Pods-FunLearningWithBaby.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FunLearningWithBaby.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FunLearningWithBaby/Pods-FunLearningWithBaby.debug.xcconfig"; sourceTree = "<group>"; };
+		FB90297A21475C14003D2590 /* InputSpeechViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputSpeechViewController.swift; sourceTree = "<group>"; };
+		FB90297D21475EE5003D2590 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
+		FB90297F21475F29003D2590 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		FB902983214766C8003D2590 /* CPImageSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPImageSlider.swift; sourceTree = "<group>"; };
+		FB902984214766C8003D2590 /* CPImageSlider.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CPImageSlider.xib; sourceTree = "<group>"; };
+		FB902986214766C8003D2590 /* cp_next_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cp_next_arrow.png; sourceTree = "<group>"; };
+		FB902987214766C8003D2590 /* cp_prev_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cp_prev_arrow.png; sourceTree = "<group>"; };
+		FB90298D21476C86003D2590 /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
 		FBD08929214648AC002506BC /* FunLearningWithBaby.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FunLearningWithBaby.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBD0892C214648AC002506BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FBD08931214648AC002506BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -79,7 +94,6 @@
 		FBD089742146758B002506BC /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		FBD089752146758B002506BC /* Define.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Define.swift; sourceTree = "<group>"; };
 		FBD0897A214675E2002506BC /* OriginalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OriginalViewController.swift; sourceTree = "<group>"; };
-		FBD0897C21467D37002506BC /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,10 +147,60 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		FB90297921475BE4003D2590 /* inputSpeech */ = {
+			isa = PBXGroup;
+			children = (
+				FB90297A21475C14003D2590 /* InputSpeechViewController.swift */,
+			);
+			path = inputSpeech;
+			sourceTree = "<group>";
+		};
+		FB90297C21475ED0003D2590 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				FB90297D21475EE5003D2590 /* MainTabBarViewController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		FB902981214766B5003D2590 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				FB902982214766C8003D2590 /* CPImageSlider */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		FB902982214766C8003D2590 /* CPImageSlider */ = {
+			isa = PBXGroup;
+			children = (
+				FB902983214766C8003D2590 /* CPImageSlider.swift */,
+				FB902984214766C8003D2590 /* CPImageSlider.xib */,
+				FB902985214766C8003D2590 /* Resources */,
+			);
+			path = CPImageSlider;
+			sourceTree = "<group>";
+		};
+		FB902985214766C8003D2590 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FB902986214766C8003D2590 /* cp_next_arrow.png */,
+				FB902987214766C8003D2590 /* cp_prev_arrow.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FB90298C21476C3B003D2590 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FB90298D21476C86003D2590 /* BaseModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		FBD08920214648AC002506BC = {
 			isa = PBXGroup;
 			children = (
-				FBD0897C21467D37002506BC /* Default-568h@2x.png */,
 				FBD0892B214648AC002506BC /* FunLearningWithBaby */,
 				FBD08940214648AE002506BC /* FunLearningWithBabyTests */,
 				FBD0894B214648AE002506BC /* FunLearningWithBabyUITests */,
@@ -163,6 +227,8 @@
 				FBD0896E21467569002506BC /* Configuaration */,
 				FBD089732146758B002506BC /* Common */,
 				FBD0895A21464D57002506BC /* Extension */,
+				FB902981214766B5003D2590 /* Library */,
+				FB90298C21476C3B003D2590 /* Model */,
 				FBD0896721464D66002506BC /* Storyboard */,
 				FBD0896B2146650C002506BC /* ViewController */,
 			);
@@ -212,6 +278,9 @@
 		FBD0896B2146650C002506BC /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				FB90297F21475F29003D2590 /* HomeViewController.swift */,
+				FB90297C21475ED0003D2590 /* TabBar */,
+				FB90297921475BE4003D2590 /* inputSpeech */,
 				FBD0897A214675E2002506BC /* OriginalViewController.swift */,
 				FBD0896C21466567002506BC /* SpeechViewController.swift */,
 			);
@@ -347,8 +416,10 @@
 				FBD0897221467569002506BC /* Info.plist in Resources */,
 				FBD08937214648AE002506BC /* LaunchScreen.storyboard in Resources */,
 				FBD0897121467569002506BC /* Assets.xcassets in Resources */,
-				FBD0897D21467D37002506BC /* Default-568h@2x.png in Resources */,
 				FBD08932214648AC002506BC /* Main.storyboard in Resources */,
+				FB90298B214766C8003D2590 /* cp_prev_arrow.png in Resources */,
+				FB902989214766C8003D2590 /* CPImageSlider.xib in Resources */,
+				FB90298A214766C8003D2590 /* cp_next_arrow.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -455,11 +526,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBD0896121464D57002506BC /* Mdate.swift in Sources */,
+				FB90297B21475C14003D2590 /* InputSpeechViewController.swift in Sources */,
 				FBD0896321464D57002506BC /* StringExtension.swift in Sources */,
 				FBD0896421464D57002506BC /* UIDeviceExtension.swift in Sources */,
 				FBD0896521464D57002506BC /* UILabelExtension.swift in Sources */,
+				FB90298021475F29003D2590 /* HomeViewController.swift in Sources */,
+				FB90298E21476C86003D2590 /* BaseModel.swift in Sources */,
 				FBD089772146758B002506BC /* Common.swift in Sources */,
 				FBD0896D21466567002506BC /* SpeechViewController.swift in Sources */,
+				FB902988214766C8003D2590 /* CPImageSlider.swift in Sources */,
+				FB90297E21475EE5003D2590 /* MainTabBarViewController.swift in Sources */,
 				FBD0892D214648AC002506BC /* AppDelegate.swift in Sources */,
 				FBD0897B214675E2002506BC /* OriginalViewController.swift in Sources */,
 				FBD0896621464D57002506BC /* UIViewExtension.swift in Sources */,
@@ -638,9 +714,9 @@
 			baseConfigurationReference = D70C1565440640DD3EDC1D85 /* Pods-FunLearningWithBaby.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = RT689AHQ26;
-				INFOPLIST_FILE = "$(SRCROOT)/FunLearningWithBaby/Cònig/Info.plist";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/FunLearningWithBaby/Configuaration/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -648,6 +724,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Beacon.FunLearningWithBaby;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -658,9 +735,9 @@
 			baseConfigurationReference = 630BFEDFAB248090A57E2BE1 /* Pods-FunLearningWithBaby.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = RT689AHQ26;
-				INFOPLIST_FILE = "$(SRCROOT)/FunLearningWithBaby/Cònig/Info.plist";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/FunLearningWithBaby/Configuaration/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -668,6 +745,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Beacon.FunLearningWithBaby;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

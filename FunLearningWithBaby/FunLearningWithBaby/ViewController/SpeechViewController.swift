@@ -28,6 +28,23 @@ class SpeechViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    // MARK: handleSpeech
+    func speechAction(isRecording: Bool, completionHandler: @escaping (Error?, SFSpeechRecognitionResult?) -> ()) {
+        if isRecording {
+            audioEngine.stop()
+            recognitionTask?.cancel()
+        } else {
+            self.recordAndRecognizeSpeech(completionHandler: { (error,result) in
+                completionHandler(error,result)
+            })
+        }
+    }
+    
+    func stopSpeech() {
+        audioEngine.stop()
+        recognitionTask?.cancel()
+    }
+    
     // MARK: - Check Authorization Status
     func requestSpeechAuthorization(authorization: @escaping (SFSpeechRecognizerAuthorizationStatus) -> ()) {
         SFSpeechRecognizer.requestAuthorization { authStatus in
@@ -64,15 +81,7 @@ class SpeechViewController: UIViewController {
             return
         }
         recognitionTask = speechRecognizer?.recognitionTask(with: request, resultHandler: { result, error in
-            if let result = result {
-                // Accept
-                completionHandler(nil,result)
-
-            } else if let error = error {
-                // Error
-                // "There has been a speech recognition error.")
-                completionHandler(error,nil)
-            }
+            completionHandler(nil,result)
         })
     }
 }

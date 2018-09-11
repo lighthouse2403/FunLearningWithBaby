@@ -22,15 +22,15 @@ let kUUID                           = (UIDevice.current.identifierForVendor?.uui
 
 // MARK: - Identifier
 // App identifier
-let APP_ID                      = "1188956958"
+let APP_ID                          = "1188956958"
 
 // Toast tag
 let kIS_TOAST: Int = 243
 
 // Admob
-let kBannerAdUnitId             = "ca-app-pub-4981657393585558/2603567830"
-let kInterstitialAdUnitID       = "ca-app-pub-4981657393585558/4986188592"
-let kApplicationId              = "ca-app-pub-4981657393585558~3561426285"
+let kBannerAdUnitId                 = "ca-app-pub-4981657393585558/2603567830"
+let kInterstitialAdUnitID           = "ca-app-pub-4981657393585558/4986188592"
+let kApplicationId                  = "ca-app-pub-4981657393585558~3561426285"
 
 // MARK: - Define Object
 

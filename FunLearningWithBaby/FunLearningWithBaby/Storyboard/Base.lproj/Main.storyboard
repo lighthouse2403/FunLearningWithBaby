@@ -10,19 +10,65 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Delegate-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="InputSpeechViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="InputSpeechViewController" customModule="FunLearningWithBaby" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" restorationIdentifier="CPImageSlider" translatesAutoresizingMaskIntoConstraints="NO" id="L8Y-CU-q2w" customClass="CPImageSlider" customModule="FunLearningWithBaby" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="497"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Hlk-RL-k1j"/>
+                                </connections>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WJB-gx-aVC">
+                                <rect key="frame" x="20" y="517" width="335" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="taP-Qp-MpG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <color key="textColor" red="0.2784313725" green="0.67450980390000004" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9PS-M9-vAs">
+                                <rect key="frame" x="167.5" y="567" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="18K-yj-7Qz"/>
+                                    <constraint firstAttribute="height" constant="40" id="qKv-9V-7aM"/>
+                                </constraints>
+                                <state key="normal" title="Nói"/>
+                                <connections>
+                                    <action selector="tappedSpeak:" destination="BYZ-38-t0r" eventType="touchUpInside" id="x3W-aO-TTR"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="9PS-M9-vAs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1nL-NV-vgZ"/>
+                            <constraint firstItem="WJB-gx-aVC" firstAttribute="top" secondItem="L8Y-CU-q2w" secondAttribute="bottom" constant="20" id="87g-RM-We2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="9PS-M9-vAs" secondAttribute="bottom" constant="60" id="8RE-kG-bTn"/>
+                            <constraint firstItem="L8Y-CU-q2w" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="8ri-i0-bAz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WJB-gx-aVC" secondAttribute="trailing" constant="20" id="IBl-4a-O7o"/>
+                            <constraint firstItem="L8Y-CU-q2w" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="VrZ-Dc-lko"/>
+                            <constraint firstItem="WJB-gx-aVC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ewh-xA-AWW"/>
+                            <constraint firstItem="9PS-M9-vAs" firstAttribute="top" secondItem="WJB-gx-aVC" secondAttribute="bottom" constant="10" id="qz4-Dk-Vku"/>
+                            <constraint firstItem="L8Y-CU-q2w" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="rEr-Y3-y0h"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="inputLabel" destination="WJB-gx-aVC" id="v5V-Vm-zMs"/>
+                        <outlet property="microButton" destination="9PS-M9-vAs" id="Kag-AW-Ms1"/>
+                        <outlet property="slider" destination="L8Y-CU-q2w" id="hxJ-uH-ujn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="117.39130434782609"/>
         </scene>
     </scenes>
 </document>
