@@ -17,7 +17,7 @@
 		FB90298A214766C8003D2590 /* cp_next_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = FB902986214766C8003D2590 /* cp_next_arrow.png */; };
 		FB90298B214766C8003D2590 /* cp_prev_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = FB902987214766C8003D2590 /* cp_prev_arrow.png */; };
 		FB90298E21476C86003D2590 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB90298D21476C86003D2590 /* BaseModel.swift */; };
-		FB9029912147AC9C003D2590 /* NewLessonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9029902147AC9C003D2590 /* NewLessonViewController.swift */; };
+		FB9029962147CE58003D2590 /* ManagerPictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9029952147CE58003D2590 /* ManagerPictureViewController.swift */; };
 		FBD0892D214648AC002506BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD0892C214648AC002506BC /* AppDelegate.swift */; };
 		FBD08932214648AC002506BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBD08930214648AC002506BC /* Main.storyboard */; };
 		FBD08937214648AE002506BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBD08935214648AE002506BC /* LaunchScreen.storyboard */; };
@@ -73,7 +73,7 @@
 		FB902986214766C8003D2590 /* cp_next_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cp_next_arrow.png; sourceTree = "<group>"; };
 		FB902987214766C8003D2590 /* cp_prev_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cp_prev_arrow.png; sourceTree = "<group>"; };
 		FB90298D21476C86003D2590 /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
-		FB9029902147AC9C003D2590 /* NewLessonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewLessonViewController.swift; sourceTree = "<group>"; };
+		FB9029952147CE58003D2590 /* ManagerPictureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManagerPictureViewController.swift; sourceTree = "<group>"; };
 		FBD08929214648AC002506BC /* FunLearningWithBaby.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FunLearningWithBaby.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBD0892C214648AC002506BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FBD08931214648AC002506BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -201,12 +201,12 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		FB90298F2147AC59003D2590 /* AddNewLesson */ = {
+		FB9029942147CE58003D2590 /* ManagerPictureLesson */ = {
 			isa = PBXGroup;
 			children = (
-				FB9029902147AC9C003D2590 /* NewLessonViewController.swift */,
+				FB9029952147CE58003D2590 /* ManagerPictureViewController.swift */,
 			);
-			path = AddNewLesson;
+			path = ManagerPictureLesson;
 			sourceTree = "<group>";
 		};
 		FBD08920214648AC002506BC = {
@@ -293,7 +293,7 @@
 				FBD0897A214675E2002506BC /* OriginalViewController.swift */,
 				FB90297C21475ED0003D2590 /* TabBar */,
 				FB90297921475BE4003D2590 /* inputSpeech */,
-				FB90298F2147AC59003D2590 /* AddNewLesson */,
+				FB9029942147CE58003D2590 /* ManagerPictureLesson */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -544,11 +544,11 @@
 				FB90298021475F29003D2590 /* HomeViewController.swift in Sources */,
 				FB90298E21476C86003D2590 /* BaseModel.swift in Sources */,
 				FBD089772146758B002506BC /* Common.swift in Sources */,
+				FB9029962147CE58003D2590 /* ManagerPictureViewController.swift in Sources */,
 				FBD0896D21466567002506BC /* SpeechViewController.swift in Sources */,
 				FB902988214766C8003D2590 /* CPImageSlider.swift in Sources */,
 				FB90297E21475EE5003D2590 /* MainTabBarViewController.swift in Sources */,
 				FBD0892D214648AC002506BC /* AppDelegate.swift in Sources */,
-				FB9029912147AC9C003D2590 /* NewLessonViewController.swift in Sources */,
 				FBD0897B214675E2002506BC /* OriginalViewController.swift in Sources */,
 				FBD0896621464D57002506BC /* UIViewExtension.swift in Sources */,
 				FBD089782146758B002506BC /* Define.swift in Sources */,

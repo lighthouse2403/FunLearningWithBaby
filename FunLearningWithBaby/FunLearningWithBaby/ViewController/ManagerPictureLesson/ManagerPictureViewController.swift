@@ -8,7 +8,7 @@
 
 import UIKit
 
-class NewLessonViewController: OriginalViewController {
+class ManagerPictureViewController: OriginalViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
