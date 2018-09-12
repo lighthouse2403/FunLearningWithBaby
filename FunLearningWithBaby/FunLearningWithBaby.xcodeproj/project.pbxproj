@@ -10,6 +10,7 @@
 		10C0C1BA8D72E4705978601B /* Pods_FunLearningWithBaby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F0F37DE4136078CFA1C9E14 /* Pods_FunLearningWithBaby.framework */; };
 		9EE3538418265F3687C57C70 /* Pods_FunLearningWithBabyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1CF039176D983DE156A1A29 /* Pods_FunLearningWithBabyTests.framework */; };
 		FB0A4DCE214908F6003D7941 /* PictureTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0A4DCD214908F6003D7941 /* PictureTableViewCell.swift */; };
+		FB0A4DD121490D60003D7941 /* AddNewPictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0A4DD021490D60003D7941 /* AddNewPictureViewController.swift */; };
 		FB90297B21475C14003D2590 /* InputSpeechViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB90297A21475C14003D2590 /* InputSpeechViewController.swift */; };
 		FB90297E21475EE5003D2590 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB90297D21475EE5003D2590 /* MainTabBarViewController.swift */; };
 		FB90298021475F29003D2590 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB90297F21475F29003D2590 /* HomeViewController.swift */; };
@@ -67,6 +68,7 @@
 		BAC4EA5C8A1D64F29E04C548 /* Pods-FunLearningWithBabyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FunLearningWithBabyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FunLearningWithBabyTests/Pods-FunLearningWithBabyTests.release.xcconfig"; sourceTree = "<group>"; };
 		D70C1565440640DD3EDC1D85 /* Pods-FunLearningWithBaby.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FunLearningWithBaby.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FunLearningWithBaby/Pods-FunLearningWithBaby.debug.xcconfig"; sourceTree = "<group>"; };
 		FB0A4DCD214908F6003D7941 /* PictureTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureTableViewCell.swift; sourceTree = "<group>"; };
+		FB0A4DD021490D60003D7941 /* AddNewPictureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewPictureViewController.swift; sourceTree = "<group>"; };
 		FB90297A21475C14003D2590 /* InputSpeechViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputSpeechViewController.swift; sourceTree = "<group>"; };
 		FB90297D21475EE5003D2590 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
 		FB90297F21475F29003D2590 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -151,6 +153,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		FB0A4DCF21490D2E003D7941 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				FB0A4DCD214908F6003D7941 /* PictureTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		FB90297921475BE4003D2590 /* inputSpeech */ = {
 			isa = PBXGroup;
 			children = (
@@ -207,7 +217,8 @@
 			isa = PBXGroup;
 			children = (
 				FB9029952147CE58003D2590 /* ManagerPictureViewController.swift */,
-				FB0A4DCD214908F6003D7941 /* PictureTableViewCell.swift */,
+				FB0A4DD021490D60003D7941 /* AddNewPictureViewController.swift */,
+				FB0A4DCF21490D2E003D7941 /* Cell */,
 			);
 			path = ManagerPictureLesson;
 			sourceTree = "<group>";
@@ -540,6 +551,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBD0896121464D57002506BC /* Mdate.swift in Sources */,
+				FB0A4DD121490D60003D7941 /* AddNewPictureViewController.swift in Sources */,
 				FB90297B21475C14003D2590 /* InputSpeechViewController.swift in Sources */,
 				FBD0896321464D57002506BC /* StringExtension.swift in Sources */,
 				FBD0896421464D57002506BC /* UIDeviceExtension.swift in Sources */,

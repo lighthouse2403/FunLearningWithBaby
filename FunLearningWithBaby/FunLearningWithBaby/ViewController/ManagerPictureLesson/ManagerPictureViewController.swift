@@ -21,11 +21,18 @@ class ManagerPictureViewController: OriginalViewController, UITableViewDelegate,
         // Dispose of any resources that can be recreated.
     }
 
+    // MARK: Navigation Bar
     func setupNavigationBar() {
         self.addRightBarItem(imageName: "add", imageTouch: "add", title: "")
-        self.addTitleNavigation(title: "Thêm ảnh")
+        self.addTitleNavigation(title: "Quản lý ảnh")
     }
     
+    override func tappedRightBarButton(sender: UIButton) {
+        let addNewPictureViewController = main_storyboard.instantiateViewController(withIdentifier: "AddNewPictureViewController") as! AddNewPictureViewController
+        self.navigationController?.pushViewController(addNewPictureViewController, animated: true)
+    }
+    
+    // MARK: UITableView delegate, datasource
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
