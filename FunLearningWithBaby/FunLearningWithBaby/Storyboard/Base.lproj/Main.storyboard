@@ -102,7 +102,7 @@
         <!--Manager Picture View Controller-->
         <scene sceneID="pTu-Em-qTg">
             <objects>
-                <viewController storyboardIdentifier="NewLessonViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="OW7-eN-meW" customClass="ManagerPictureViewController" customModule="FunLearningWithBaby" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ManagerPictureViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="OW7-eN-meW" customClass="ManagerPictureViewController" customModule="FunLearningWithBaby" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gql-1F-VcQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -111,7 +111,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="100" id="pF0-xB-It0">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="PictureTableViewCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PictureTableViewCell" rowHeight="100" id="pF0-xB-It0" customClass="PictureTableViewCell" customModule="FunLearningWithBaby" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pF0-xB-It0" id="dXA-8D-nWb">
@@ -141,6 +141,10 @@
                                                 <constraint firstAttribute="bottom" secondItem="gEJ-Y0-Vms" secondAttribute="bottom" constant="10" id="rnx-If-Tjx"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="keyLabel" destination="gEJ-Y0-Vms" id="EGB-ql-d0y"/>
+                                            <outlet property="pictureImageView" destination="WQq-6r-Kxk" id="fKG-yr-hFl"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -158,6 +162,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PEY-a9-iu4"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="w2F-0a-NCo" id="1Ag-e8-blg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="80p-Q2-7Qy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
