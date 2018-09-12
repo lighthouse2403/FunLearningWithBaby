@@ -23,13 +23,13 @@ class MainTabBarViewController: UITabBarController {
     func addTabBarViewController() {
         // Input speech
         let inputSpeechViewController = main_storyboard.instantiateViewController(withIdentifier: "InputSpeechViewController") as! InputSpeechViewController
-        let tabBar1 = self.setupController(inputSpeechViewController,
+        let tabBar1 = self.setupController(UINavigationController.init(rootViewController: inputSpeechViewController),
                                                tabName: "Học tập",
                                                image: IMAGE("pregnancyBar"),
                                                selectedImage: IMAGE("pregnancyBar"))
         
         let managerPictureViewController = main_storyboard.instantiateViewController(withIdentifier: "ManagerPictureViewController") as! ManagerPictureViewController
-        let tabBar2 = self.setupController(managerPictureViewController,
+        let tabBar2 = self.setupController(UINavigationController.init(rootViewController: managerPictureViewController),
                                            tabName: "Quản lý ảnh",
                                            image: IMAGE("pregnancyBar"),
                                            selectedImage: IMAGE("pregnancyBar"))

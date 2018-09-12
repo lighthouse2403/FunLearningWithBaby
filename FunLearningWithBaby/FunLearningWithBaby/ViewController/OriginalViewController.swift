@@ -17,6 +17,7 @@ class OriginalViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController?.navigationBar.barTintColor = Common.mainColor()
     }
 
     override func viewWillAppear(_ animated: Bool) {

@@ -204,7 +204,10 @@
                                     <constraint firstAttribute="width" constant="80" id="Ex6-Vp-AyY"/>
                                     <constraint firstAttribute="height" constant="80" id="jRl-8f-bOo"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Add"/>
+                                <connections>
+                                    <action selector="tappedAddNewPicture:" destination="8kx-EA-dZq" eventType="touchUpInside" id="7xx-0U-uqs"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

@@ -33,5 +33,32 @@ class AddNewPictureViewController: OriginalViewController {
         self.navigationController?.popViewController(animated: true)
     }
     
-    
+    // MARK: Action
+    @IBAction func tappedAddNewPicture(_ sender: UIButton) {
+        self.showActionSheet(titleArray: ["Mở camera","Chọn từ ảnh"], onTapped: { selectedTitle in
+            if selectedTitle == "Mở camera" {
+                Common.openCamera(controller: self)
+            } else {
+                Common.openGallary(controller: self)
+            }
+        })
+    }
+}
+
+extension AddNewPictureViewController: UINavigationControllerDelegate, UIImagePickerControllerDelegate {
+    //UIImagePickerControllerDelegate
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        self.showActivityIndicator()
+        self.dismiss(animated: true, completion: {
+            let originalImage = info[UIImagePickerControllerOriginalImage] as! UIImage
+            guard let compressData = UIImageJPEGRepresentation(originalImage, 0.6) else {
+                self.hideActivityIndicator()
+                return
+            }
+            let compressImage = UIImage.init(data: compressData)
+            self.newPictureImageView.image = compressImage
+            // Write image to document
+            self.hideActivityIndicator()
+        })
+    }
 }
