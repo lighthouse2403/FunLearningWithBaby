@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import StoreKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,7 +16,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var tabBarHeight: CGFloat   = 0.0
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        self.window = UIWindow.init(frame: CGRect.init(x: 0, y: 0, width: SCREEN_WIDTH, height: SCREEN_HEIGHT))
+
+        let homeViewController = main_storyboard.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
+        self.window?.rootViewController = homeViewController
+
+        // Request Review pop up
+        if #available(iOS 10.3, *) {
+            let isDisplayedAppReview = UserDefaults.standard.bool(forKey: "isDisplayedAppReview")
+            if !isDisplayedAppReview {
+                SKStoreReviewController.requestReview()
+                UserDefaults.standard.set(true, forKey: "isDisplayedAppReview")
+                UserDefaults.standard.synchronize()
+            }
+        }
+        
         return true
     }
 

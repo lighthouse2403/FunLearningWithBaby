@@ -192,7 +192,7 @@ class Common: NSObject {
     
     // MARK: - CAMERA
     class func openCamera(controller: UIViewController) {
-        if AVCaptureDevice.authorizationStatus(for: .video) == .denied {
+        if AVCaptureDevice.authorizationStatus(for: .video) != .authorized {
             let alertController = UIAlertController(title: "Ứng dụng này muốn truy cập máy ảnh", message: "Vui lòng cho phép để truy cập máy ảnh", preferredStyle: .alert)
             alertController.addAction(UIAlertAction(title: "Mở cài đặt", style: .cancel) { alertController in
                 UIApplication.shared.open(URL(string: UIApplicationOpenSettingsURLString)!, options: [:], completionHandler: nil)
@@ -211,7 +211,7 @@ class Common: NSObject {
         let picker = UIImagePickerController()
         picker.delegate = controller as? UIImagePickerControllerDelegate & UINavigationControllerDelegate
 
-        if PHPhotoLibrary.authorizationStatus() == PHAuthorizationStatus.denied {
+        if PHPhotoLibrary.authorizationStatus() == .denied {
             let alertController = UIAlertController(title: "Ứng dụng này muốn truy cập thư viện ảnh", message: "Vui lòng cho phép để truy cập thư viện ảnh", preferredStyle: .alert)
             alertController.addAction(UIAlertAction(title: "Mở cài đặt", style: .cancel) { alertController in
                 UIApplication.shared.open(URL(string: UIApplicationOpenSettingsURLString)!, options: [:], completionHandler: nil)
