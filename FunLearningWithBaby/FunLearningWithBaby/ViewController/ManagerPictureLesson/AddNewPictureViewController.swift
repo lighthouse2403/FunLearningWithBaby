@@ -11,9 +11,11 @@ import UIKit
 class AddNewPictureViewController: OriginalViewController {
 
     @IBOutlet weak var newPictureImageView: UIImageView!
-    @IBOutlet weak var keyTextField: UITextField!
     @IBOutlet weak var microButton: UIButton!
     @IBOutlet weak var addNewPictureButton: UIButton!
+    @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var keyTextField: TextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupNavigationBar()
@@ -34,17 +36,23 @@ class AddNewPictureViewController: OriginalViewController {
     // MARK: Set up UI
     func setupUI() {
         keyTextField.setupBorder(color: Common.mainColor())
+        
+        // Keyboard
+        self.addKeyboardObserver()
+        self.addTapGesture(view: view)
     }
     
+    // MARK: Action
+    
+    // Navigation bar action
     override func tappedLeftBarButton(sender: UIButton) {
         self.navigationController?.popViewController(animated: true)
     }
     
     override func tappedRightBarButton(sender: UIButton) {
-            // Save new image
+        // Save new image
     }
     
-    // MARK: Action
     @IBAction func tappedAddNewPicture(_ sender: UIButton) {
         self.showActionSheet(titleArray: ["Mở camera","Chọn từ ảnh"], onTapped: { selectedTitle in
             if selectedTitle == "Mở camera" {
@@ -62,6 +70,19 @@ class AddNewPictureViewController: OriginalViewController {
         })
     }
     
+    // Keyboard
+    override func showKeyboard(notification: NSNotification) {
+        if let keyBoardSize = notification.userInfo![UIKeyboardFrameEndUserInfoKey] as? NSValue {
+            scrollView.contentSize = CGSize.init(width: scrollView.frame.width, height: microButton.frame.origin.y + microButton.frame.height + keyBoardSize.cgRectValue.height + 10 - app_delegate.tabBarHeight)
+            scrollView.contentOffset = CGPoint.init(x: 0, y: scrollView.contentSize.height - (microButton.frame.origin.y + microButton.frame.height))
+        }
+    }
+    
+    override func hideKeyboard(notification: NSNotification) {
+        scrollView.contentOffset = CGPoint.init(x: 0, y: 0)
+
+        scrollView.contentSize = CGSize.init(width: scrollView.frame.width, height: microButton.frame.origin.y + microButton.frame.height)
+    }
 }
 
 extension AddNewPictureViewController: UINavigationControllerDelegate, UIImagePickerControllerDelegate {

@@ -2,6 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSCameraUsageDescription</key>
+	<string>Take a picture to add to lesson</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Add new picture for lesson</string>
 	<key>NSSpeechRecognitionUsageDescription</key>
 	<string>Speak and watch your words become text or say a color to see the grey box change colors.</string>
 	<key>NSMicrophoneUsageDescription</key>

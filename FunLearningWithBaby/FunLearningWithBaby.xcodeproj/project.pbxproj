@@ -11,6 +11,7 @@
 		9EE3538418265F3687C57C70 /* Pods_FunLearningWithBabyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1CF039176D983DE156A1A29 /* Pods_FunLearningWithBabyTests.framework */; };
 		FB0A4DCE214908F6003D7941 /* PictureTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0A4DCD214908F6003D7941 /* PictureTableViewCell.swift */; };
 		FB0A4DD121490D60003D7941 /* AddNewPictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0A4DD021490D60003D7941 /* AddNewPictureViewController.swift */; };
+		FB48D39F215A32D80027BFC0 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB48D39E215A32D80027BFC0 /* TextField.swift */; };
 		FB90297B21475C14003D2590 /* InputSpeechViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB90297A21475C14003D2590 /* InputSpeechViewController.swift */; };
 		FB90297E21475EE5003D2590 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB90297D21475EE5003D2590 /* MainTabBarViewController.swift */; };
 		FB90298021475F29003D2590 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB90297F21475F29003D2590 /* HomeViewController.swift */; };
@@ -69,6 +70,7 @@
 		D70C1565440640DD3EDC1D85 /* Pods-FunLearningWithBaby.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FunLearningWithBaby.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FunLearningWithBaby/Pods-FunLearningWithBaby.debug.xcconfig"; sourceTree = "<group>"; };
 		FB0A4DCD214908F6003D7941 /* PictureTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureTableViewCell.swift; sourceTree = "<group>"; };
 		FB0A4DD021490D60003D7941 /* AddNewPictureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewPictureViewController.swift; sourceTree = "<group>"; };
+		FB48D39E215A32D80027BFC0 /* TextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
 		FB90297A21475C14003D2590 /* InputSpeechViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputSpeechViewController.swift; sourceTree = "<group>"; };
 		FB90297D21475EE5003D2590 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
 		FB90297F21475F29003D2590 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -281,6 +283,7 @@
 		FBD0895A21464D57002506BC /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				FB48D39E215A32D80027BFC0 /* TextField.swift */,
 				FBD0895B21464D57002506BC /* Mdate.swift */,
 				FBD0895C21464D57002506BC /* NSObjectExtension.swift */,
 				FBD0895D21464D57002506BC /* StringExtension.swift */,
@@ -553,6 +556,7 @@
 				FBD0896121464D57002506BC /* Mdate.swift in Sources */,
 				FB0A4DD121490D60003D7941 /* AddNewPictureViewController.swift in Sources */,
 				FB90297B21475C14003D2590 /* InputSpeechViewController.swift in Sources */,
+				FB48D39F215A32D80027BFC0 /* TextField.swift in Sources */,
 				FBD0896321464D57002506BC /* StringExtension.swift in Sources */,
 				FBD0896421464D57002506BC /* UIDeviceExtension.swift in Sources */,
 				FBD0896521464D57002506BC /* UILabelExtension.swift in Sources */,

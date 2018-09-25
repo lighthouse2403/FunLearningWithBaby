@@ -126,7 +126,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gEJ-Y0-Vms">
-                                                    <rect key="frame" x="115" y="10" width="240" height="79.5"/>
+                                                    <rect key="frame" x="115" y="10" width="185" height="79.5"/>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
                                                     <color key="textColor" red="0.2784313725" green="0.67450980390000004" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -187,13 +187,14 @@
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imageView:tzB-La-Yme:image" translatesAutoresizingMaskIntoConstraints="NO" id="tzB-La-Yme">
                                                 <rect key="frame" x="40" y="40" width="240" height="40"/>
                                             </imageView>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mrf-9D-mM1">
+                                            <textField opaque="NO" contentMode="scaleToFill" restorationIdentifier="TextField" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mrf-9D-mM1" customClass="TextField" customModule="FunLearningWithBaby" customModuleProvider="target">
                                                 <rect key="frame" x="40" y="408" width="240" height="40"/>
+                                                <color key="tintColor" red="0.043137254899999998" green="0.68627450980000004" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="uDI-86-fel"/>
                                                 </constraints>
-                                                <nil key="textColor"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" red="0.043137254901960784" green="0.68627450980392157" blue="0.8666666666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tfa-mf-VRb">
@@ -232,6 +233,7 @@
                                             <constraint firstItem="RJE-EN-MTi" firstAttribute="centerY" secondItem="B5r-gP-2Vf" secondAttribute="centerY" id="tsf-dQ-wxL"/>
                                             <constraint firstItem="RJE-EN-MTi" firstAttribute="centerX" secondItem="B5r-gP-2Vf" secondAttribute="centerX" id="wbm-Pa-BeI"/>
                                             <constraint firstItem="Tfa-mf-VRb" firstAttribute="top" secondItem="Mrf-9D-mM1" secondAttribute="bottom" constant="40" id="x2z-ET-TRl"/>
+                                            <constraint firstItem="Mrf-9D-mM1" firstAttribute="top" relation="greaterThanOrEqual" secondItem="tzB-La-Yme" secondAttribute="bottom" constant="20" id="zqI-e0-ju9"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -256,9 +258,10 @@
                     </view>
                     <connections>
                         <outlet property="addNewPictureButton" destination="RJE-EN-MTi" id="hrl-jH-pgL"/>
-                        <outlet property="keyTextField" destination="Mrf-9D-mM1" id="h3g-YJ-Fv9"/>
+                        <outlet property="keyTextField" destination="Mrf-9D-mM1" id="LQJ-K4-A70"/>
                         <outlet property="microButton" destination="Tfa-mf-VRb" id="BsI-V4-wsf"/>
                         <outlet property="newPictureImageView" destination="tzB-La-Yme" id="ufO-de-eya"/>
+                        <outlet property="scrollView" destination="wNa-y4-x4V" id="Dbe-eb-3mo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UST-gF-6FR" userLabel="First Responder" sceneMemberID="firstResponder"/>
