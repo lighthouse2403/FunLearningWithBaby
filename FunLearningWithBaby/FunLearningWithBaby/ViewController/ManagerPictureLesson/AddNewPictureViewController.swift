@@ -57,6 +57,9 @@ class AddNewPictureViewController: OriginalViewController {
     
     @IBAction func tappedMicroPhone(_ sender: UIButton) {
         sender.isSelected = !sender.isSelected
+        SpeechViewController.shared.speechAction(isRecording: sender.isSelected, completionHandler: {(error,result) in
+            self.keyTextField.text = result?.bestTranscription.formattedString
+        })
     }
     
 }
