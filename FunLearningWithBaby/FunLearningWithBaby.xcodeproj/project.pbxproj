@@ -742,8 +742,9 @@
 			baseConfigurationReference = D70C1565440640DD3EDC1D85 /* Pods-FunLearningWithBaby.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RT689AHQ26;
 				INFOPLIST_FILE = "$(SRCROOT)/FunLearningWithBaby/Configuaration/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -763,8 +764,9 @@
 			baseConfigurationReference = 630BFEDFAB248090A57E2BE1 /* Pods-FunLearningWithBaby.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RT689AHQ26;
 				INFOPLIST_FILE = "$(SRCROOT)/FunLearningWithBaby/Configuaration/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (

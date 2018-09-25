@@ -30,7 +30,7 @@ class Common: NSObject {
     
     // Show main color
     static func mainColor() -> UIColor {
-        return self.color(withRGB: 0x47AC66)
+        return self.color(withRGB: 0x0BAFDD) // 0BAFDD
     }
     
     // MARK: - DATE

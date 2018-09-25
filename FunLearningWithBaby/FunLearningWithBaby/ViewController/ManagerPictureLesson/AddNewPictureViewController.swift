@@ -17,6 +17,7 @@ class AddNewPictureViewController: OriginalViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupNavigationBar()
+        self.setupUI()
     }
 
     override func didReceiveMemoryWarning() {
@@ -26,11 +27,21 @@ class AddNewPictureViewController: OriginalViewController {
     // MARK: Navigation Bar
     func setupNavigationBar() {
         self.addLeftBarItem(imageName: "back", title: "")
+        self.addRightBarItem(imageName: "", imageTouch: "", title: "Save")
         self.addTitleNavigation(title: "Thêm ảnh")
+    }
+    
+    // MARK: Set up UI
+    func setupUI() {
+        keyTextField.setupBorder(color: Common.mainColor())
     }
     
     override func tappedLeftBarButton(sender: UIButton) {
         self.navigationController?.popViewController(animated: true)
+    }
+    
+    override func tappedRightBarButton(sender: UIButton) {
+            // Save new image
     }
     
     // MARK: Action
@@ -43,6 +54,11 @@ class AddNewPictureViewController: OriginalViewController {
             }
         })
     }
+    
+    @IBAction func tappedMicroPhone(_ sender: UIButton) {
+        sender.isSelected = !sender.isSelected
+    }
+    
 }
 
 extension AddNewPictureViewController: UINavigationControllerDelegate, UIImagePickerControllerDelegate {

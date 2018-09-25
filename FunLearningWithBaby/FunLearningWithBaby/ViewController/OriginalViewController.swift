@@ -176,7 +176,7 @@ class OriginalViewController: UIViewController {
         if title.count > 0 {
             rightButton.frame = CGRect.init(x: 0, y: 0, width: 80, height: 80)
             rightButton.setTitle(title, for: UIControlState.normal)
-            rightButton.setupBorder()
+            rightButton.setupBorder(color: .clear)
         }
         if imageName.count > 0 {
             rightButton.frame = CGRect.init(x: 0, y: 0, width: 30, height: 30)

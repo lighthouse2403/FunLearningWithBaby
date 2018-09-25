@@ -10,10 +10,10 @@ import Foundation
 import UIKit
 
 extension UIView {
-    func setupBorder() {
+    func setupBorder(color: UIColor) {
         self.layer.cornerRadius = self.frame.size.height/2
         self.layer.borderWidth = 1
-        self.layer.borderColor = UIColor.clear.cgColor
+        self.layer.borderColor = color.cgColor
     }
     
     func customBorder(radius: CGFloat, color: UIColor) {
